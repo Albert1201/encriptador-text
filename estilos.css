@@ -1,0 +1,268 @@
+/* cuerpo de pagina */
+
+body {
+    box-sizing: border-box;
+    
+    background-color: rgb(30, 30, 30);
+
+}
+
+
+/* contenido */
+main {
+    display: flex;
+    flex-direction: row;
+
+}
+
+
+/* encabezado */
+header {
+    display: flex;
+    width: 70%;
+    height: auto;
+    margin-top: 4em;
+    margin-left: 4em;
+    margin-right: 0;
+}
+
+header img {
+    width: 5%;
+}
+
+
+.encriptar {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-right: 1em;
+
+}
+
+.textarea {
+    margin-top: 7%;
+    width: 80%;
+    height: 50%;
+    border: none;
+    color: rgba(131, 127, 212, 0.933);
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 1em;
+    background-color: transparent;
+    place-content: red;
+    margin: auto;
+    resize: none;
+    outline: none;
+}
+
+
+.textarea::placeholder {
+    color: rgb(133, 136, 151);
+
+}
+
+.alerta {
+    display: flex;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10%;
+    margin-bottom: 0;
+    justify-content: center;
+}
+
+.alerta p {
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.alerta p::before {
+    content: url(../img/alert.svg);
+    padding-right: 1em;
+  }
+
+.btn-container {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    margin: auto;
+    margin-top: 2%;
+    justify-content: center;
+
+}
+
+
+.btn-encriptar,
+.btn-desencriptar {
+    display: inline;
+    width: 22em;
+    height: 3.5em;
+    background-color: #17099c;
+    border: none;
+    border-radius: 1.2em;
+    margin-right: 3em;
+    cursor: pointer;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 1em;
+    box-shadow: 1px 2px 2px rgb(94, 91, 91);
+}
+
+
+.btn-copy {
+    display: inline;
+    width: 22em;
+    height: 3.5em;
+    background-color: #a62b2b;
+    border: none;
+    border-radius: 1.2em;
+    margin-right: 0.6em;
+    cursor: pointer;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 5em;
+    box-shadow: 1px 2px 2px rgb(94, 91, 91);
+
+}
+
+
+.rectangulo {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    min-height: auto;
+    background-color: rgb(102, 102, 102);
+    justify-content: start;
+    align-items: center;
+    align-content: center;
+    margin-top: -5em;
+    margin-right: 1em;
+    border-radius: 1em;
+    text-align: center;
+    height: 90vh;
+}
+
+.container-banner img {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    margin-top: 50%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.text.h1, h2 {
+    padding: 1em;
+    color: rgb(255, 255, 255);
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+
+#titulo-resultado {
+    margin-top: 1em;
+    color: rgba(255, 255, 255, 0.933);
+    font-weight: bold;
+    font-size: 1.8em;    
+    border-bottom: 1px solid #fff;
+}
+
+#resultado {
+    display: flex;
+    color: rgb(255, 255, 255);
+    width: 90%;
+    font-size: 1.5em;
+    padding: 0.5em;
+    border: none;
+    height: 90%;
+    background-color: transparent;
+    place-content: red;
+    margin: auto;
+    resize: none;
+    outline: none;
+    margin-top: 2em;
+}
+
+
+
+/* footer {
+    width: auto;
+    margin-top: 0.5em;
+    padding: 0.5em;
+    border-top: 1px solid rgb(178, 182, 178);
+    color: rgb(84, 52, 198);
+    text-align: center;
+    height: 5px;
+} */
+
+
+@media only screen and (max-width: 700px) {
+    main {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    header img {
+        width: 10%;
+    }
+
+    .btn-container {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        margin-top: 2em;
+        width: 95%;
+
+    }
+
+    .btn-encriptar,
+    .btn-desencriptar {
+        width: 100%;
+        margin: auto;
+        margin-bottom: 2em;
+    }
+
+    .textarea {
+        font-size: 100%;
+        margin: 0;
+        margin-top: 10%;
+        width: 100%;
+    }
+
+    .rectangulo {
+        margin: auto;
+        width: 90%;
+
+        height: auto;
+
+    }
+
+    .rectangulo img {
+
+        display: none;
+        margin: none;
+    }
+
+    .btn-copy {
+        width: 100%;
+                
+        margin-bottom: 2em;
+        
+    }
+
+    
+    #resultado {
+        height: auto;
+        margin: 0;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+
+}
